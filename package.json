@@ -3,15 +3,17 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
+    "build": "prisma generate && nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@prisma/extension-accelerate": "^1.1.0",
     "mysql2": "^3.11.0",
     "nuxt": "^3.13.0",
+    "prisma": "^5.18.0",
     "vue": "latest"
   },
   "devDependencies": {
